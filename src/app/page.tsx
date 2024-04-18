@@ -8,8 +8,10 @@ export default function Home() {
 
   const modules = {
     toolbar: [
-      [{ header: [1, 2, false] }],
+      [{ font: [] }, { size: ["small", "large", "huge"] }],
+      // [{ header: [1, 2, false] }],
       ["bold", "italic", "underline", "strike", "blockquote"],
+      [{ color: [] }, { background: [] }],
       [
         { list: "ordered" },
         { list: "bullet" },
@@ -22,19 +24,23 @@ export default function Home() {
     ],
   };
 
-  const formats = [
-    "header",
-    "bold",
-    "italic",
-    "underline",
-    "strike",
-    "blockquote",
-    "list",
-    "bullet",
-    "indent",
-    "link",
-    "image",
-  ];
+  // const formats = [
+  //   "font",
+  //   "size",
+  //   "script",
+  //   // "header",
+  //   "bold",
+  //   "italic",
+  //   "underline",
+  //   "strike",
+  //   "blockquote",
+  //   "list",
+  //   "bullet",
+  //   "indent",
+  //   "link",
+  //   "image",
+  // ];
+
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
       hello
@@ -43,7 +49,7 @@ export default function Home() {
         value={value}
         onChange={setValue}
         modules={modules}
-        formats={formats}
+        // formats={formats}
       />
     </main>
   );
