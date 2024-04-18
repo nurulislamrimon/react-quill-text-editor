@@ -12,14 +12,16 @@ export default function Home() {
       // [{ header: [1, 2, false] }],
       ["bold", "italic", "underline", "strike", "blockquote"],
       [{ color: [] }, { background: [] }],
+      [{ align: [] }],
       [
         { list: "ordered" },
         { list: "bullet" },
         { indent: "-1" },
         { indent: "+1" },
       ],
-      ["link", "image"],
+      ["image", "link", "video", "formula"],
       [{ script: "sub" }, { script: "super" }],
+      ["code-block"],
       ["clean"],
     ],
   };
